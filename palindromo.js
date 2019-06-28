@@ -1,5 +1,4 @@
-const btnPalindromo = document.getElementById('palíndromo')
-const response = document.getElementById('response');
+const btnPalindromo = document.getElementById('palíndromo');
 
 function texto() {
   let word = document.getElementById('text').value.toLowerCase();
