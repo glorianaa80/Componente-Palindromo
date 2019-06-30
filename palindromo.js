@@ -4,7 +4,7 @@ function texto() {
   let word = document.getElementById('text').value.toLowerCase();
   word = word.replace(/ /g, "");
 
-  for (var i = 0; i < word.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     if (word[i] != word[word.length - i - 1]) {
       return false;
     }

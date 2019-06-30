@@ -1,11 +1,11 @@
 const btnCharacter = document.getElementById('character');
-// const response = document.getElementById('response');
-// let character = [];
+
 
 function separar() {
-  let cadena = document.getElementById('text').value
-  let separador = "";
-  let arregloDeSubCadenas = cadena.split(separador);
+  const cadena = document.getElementById('text').value
+  const separador = "";
+  
+  const arregloDeSubCadenas = cadena.split(separador);
   console.log(arregloDeSubCadenas)
 
   // function onlyUnique(value, index, self) {

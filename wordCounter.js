@@ -1,9 +1,9 @@
 const btnCounter = document.getElementById('word');
-const response = document.getElementById('response');
+const counter = document.getElementById('counter');
 
 
-function wordCounter(str) {
-  palabras = str=document.getElementById('text').value.split(' ');
+function wordCounter() {
+  palabras =document.getElementById('text').value.split(' ');
   obj = [];
   for (i = 0; i < palabras.length; i++) {
     obj[palabras[i]] = 1;
@@ -17,12 +17,15 @@ function wordCounter(str) {
   }
 
   console.log(obj);
+
+  
 }
 
 function accountResponse() {
-  let p = document.createElement('p');
-  p.innerHTML += obj;
-  response.appendChild(p);
+  console.log('jjj');
+  let p2 = document.createElement('p');
+  p2.innerHTML +=  obj[palabras[i]];
+  counter.appendChild(p2);
 }
 
 
